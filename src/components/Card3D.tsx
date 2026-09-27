@@ -1,14 +1,9 @@
 import { useSpring, animated } from '@react-spring/web';
-<<<<<<< HEAD
 import { useState, useRef } from 'react';
-=======
-import { useState } from 'react';
->>>>>>> 2bb0371b2d0bb5499b1497bb13d49c74f9b136b2
 
 interface Card3DProps {
   children: React.ReactNode;
   className?: string;
-<<<<<<< HEAD
   onClick?: () => void;
 }
 
@@ -81,28 +76,6 @@ export function Card3D({ children, className = '', onClick }: Card3DProps) {
           background: `radial-gradient(circle 250px at ${glare.x}% ${glare.y}%, rgba(255, 255, 255, 0.4), transparent 80%)`
         }}
       />
-=======
-}
-
-export function Card3D({ children, className = '' }: Card3DProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const { transform, opacity } = useSpring({
-    transform: isHovered
-      ? 'perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05)'
-      : 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)',
-    opacity: isHovered ? 1 : 0.9,
-    config: { mass: 1, tension: 200, friction: 20 }
-  });
-
-  return (
-    <animated.div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{ transform, opacity }}
-      className={`transition-shadow duration-300 ${className}`}
-    >
->>>>>>> 2bb0371b2d0bb5499b1497bb13d49c74f9b136b2
       {children}
     </animated.div>
   );

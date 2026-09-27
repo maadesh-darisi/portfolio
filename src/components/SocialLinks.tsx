@@ -5,11 +5,7 @@ export function SocialLinks() {
   const links = [
     {
       icon: <Mail size={20} />,
-<<<<<<< HEAD
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=maadeshdarisi2005@gmail.com",
-=======
-      href: "mailto:maadeshdarisi2005@gmail.com",
->>>>>>> 2bb0371b2d0bb5499b1497bb13d49c74f9b136b2
       label: "Email"
     },
     {
