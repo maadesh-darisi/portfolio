@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 @layer base {
   html {
@@ -74,3 +75,5 @@
 .animate-pulse-glow {
   animation: pulseGlow 6s ease-in-out infinite;
 }
+=======
+>>>>>>> 2bb0371b2d0bb5499b1497bb13d49c74f9b136b2
